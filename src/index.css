@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer base {
+  /* body{
+        @apply h-[100vh] bg-gray-900 lg:bg-gradient-to-b from-black via-gray-950 to-gray-900   
+    } */
+
+  body {
+    @apply bg-gray-900  ;
+  }
+  h1 {
+    @apply text-[18px] text-white/85 line-clamp-1;
+  }
+
+  p {
+    @apply text-[12px];
+  }
+
+  input {
+    @apply bg-gray-800 text-white placeholder-gray-400 p-4 rounded-md outline-none w-[190px] md:w-[350px] lg:w-[400px];
+  }
+  button{
+    @apply cursor-pointer
+  }
+  img {
+    @apply h-[80%] object-contain rounded-sm;
+  }
+}
+
+@layer component {
+
+  .search-container {
+    @apply flex justify-center items-center;
+  }
+
+  .main-container {
+    @apply flex flex-col px-[10%]  bg-gray-900  text-white/85;
+  }
+
+  .card-container {
+    @apply p-2 my-[20px] h-[230px] w-[140px] md:h-[250px] md:w-[180px] lg:h-[250px] lg:w-[200px] bg-gray-700 flex flex-col rounded-sm shadow-blue-950 shadow-inner;
+  }
+}
