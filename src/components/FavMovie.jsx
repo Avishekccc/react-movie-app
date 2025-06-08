@@ -4,7 +4,7 @@ const FavMovie = ({ favourites, toggleFavourite }) => {
   return (
     <div>
       <h1>Favourite Movies</h1>
-      <div className="flex flex-wrap gap-4">
+      <div className="flex flex-wrap space-x-[45px] lg:space-x-[55px] ">
         {/* if no favrouites movie show message */}
         {favourites.length === 0 ? (
           <p className="text-gray-400">No favourite movies yet.</p>

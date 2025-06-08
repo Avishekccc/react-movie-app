@@ -6,7 +6,7 @@ const PopularMovie = ({ getAllData, favourites, isError, toggleFavourite }) => {
       <h1>Popular Movies</h1>
       {/* Show error message */}
       {isError && <h1 className="text-white/85 text-2xl  my-4">{isError}</h1>}
-          <div className="flex flex-wrap justify-between items-center lg:gap-2 xl:gap-1.5">
+          <div className="flex flex-wrap justify-between items-center gap-2 lg:gap-2 xl:gap-1.5">
         {getAllData.map((value, index) => {
           const isFav = favourites.some((fav) => fav.imdbID === value.imdbID);
           return (
